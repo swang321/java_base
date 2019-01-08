@@ -7,7 +7,7 @@ import MyArrAyListTest.MyArrAyList;
  * @Description:
  * @Author admin
  */
-public class TestMain {
+public class TestMyArrAyListMain {
     public static void main(String[] args) {
 
         MyArrAyList myList = new MyArrAyList();
@@ -29,6 +29,7 @@ public class TestMain {
         System.out.println(myList);
         System.out.println(myList.size());
         System.out.println(myList.isEmpty());
+        System.out.println(myList.get(12));
 
     }
 }

@@ -27,5 +27,10 @@ public interface IMyArrayList {
      */
     boolean isEmpty();
 
+    /**
+     * 获取 索引 index得值
+     */
+    Object get(int index);
+
 
 }

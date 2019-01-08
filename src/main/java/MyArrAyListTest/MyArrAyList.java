@@ -56,6 +56,12 @@ public class MyArrAyList implements IMyArrayList {
     }
 
     @Override
+    public Object get(int index) {
+        checkIndex(index);
+        return elementData[index];
+    }
+
+    @Override
     public void add(int index, Object obj) {
         //检查  是否超出 elementData.length()
         checkIndex(index);
@@ -66,7 +72,7 @@ public class MyArrAyList implements IMyArrayList {
     }
 
     private void checkIndex(int index) {
-        if (index > elementData.length || index < 0) {
+        if (index > size || index < 0) {
             try {
                 throw new MyException("超出范围", index);
             } catch (MyException e) {
