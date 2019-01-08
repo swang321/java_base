@@ -1,4 +1,6 @@
-package MyArrAyListTest;
+package arraylist;
+
+import myexception.MyException;
 
 import java.util.Arrays;
 
@@ -17,7 +19,7 @@ public class MyArrAyList implements IMyArrayList {
 
     private int size;
 
-    protected transient int modCount = 0;
+    private transient int modCount = 0;
 
     public MyArrAyList() {
         elementData = EMPTY_ELEMENTDATA;

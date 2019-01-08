@@ -1,6 +1,4 @@
-package MyLinkedList;
-
-import MyArrAyListTest.MyException;
+package linkedlist;
 
 /**
  * @Date: 2019/1/8 10:01

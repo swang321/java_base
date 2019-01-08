@@ -1,41 +1,10 @@
-/common/target/
-/components/target/
-/config/target/
-/controller/target/
-/dao/target/
-/dto/target/
-/handler/target/
-/interceptor/target/
-/pojo/target/
-/server/target/
-/service/target/
-/utils/target/
-/vo/target/
+.gitignore
 
-components/target/
-handler/target/
-utils/target/
-!.mvn/wrapper/maven-wrapper.jar
+*/*.iml
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+*/.idea/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+*/out/
 
-### NetBeans ###
-/nbproject/private/
-/build/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+*/target/
+

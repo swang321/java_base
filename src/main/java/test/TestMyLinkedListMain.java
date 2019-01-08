@@ -1,6 +1,6 @@
 package test;
 
-import MyLinkedList.MyLinkedList;
+import linkedlist.MyLinkedList;
 
 import java.util.LinkedList;
 
@@ -31,17 +31,13 @@ public class TestMyLinkedListMain {
         System.out.println(myLinkedList.getFirst());
         System.out.println(myLinkedList.getLast());
 
-        myLinkedList.add(0,66);
+        myLinkedList.add(0, 66);
         System.out.println(myLinkedList);
         System.out.println(myLinkedList.size());
         System.out.println(myLinkedList.get(0));
         System.out.println(myLinkedList.get(1));
         System.out.println(myLinkedList.get(2));
         System.out.println(myLinkedList.get(3));
-
-
-
-
 
 
     }

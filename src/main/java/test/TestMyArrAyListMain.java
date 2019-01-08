@@ -1,6 +1,6 @@
 package test;
 
-import MyArrAyListTest.MyArrAyList;
+import arraylist.MyArrAyList;
 
 /**
  * @Date: 2019/1/7 15:51

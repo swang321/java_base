@@ -1,4 +1,4 @@
-package MyArrAyListTest;
+package arraylist;
 
 /**
  * @Date: 2019/1/2 11:49
