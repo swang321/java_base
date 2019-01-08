@@ -3,6 +3,7 @@ package stack;
 /**
  * @Date: 2019/1/8 14:21
  * @Description: 2状态：栈空？；栈满？  2操作：压栈push；弹栈pop。
+ * 基于数组得栈(this)   基于链表得栈(略)
  * @Author admin
  */
 public class MyStack<T> extends StackParent {
