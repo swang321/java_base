@@ -1,4 +1,4 @@
-package stack;
+package collection.stack;
 
 /**
  * @Date: 2019/1/8 14:21

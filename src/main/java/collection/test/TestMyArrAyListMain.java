@@ -1,6 +1,6 @@
-package test;
+package collection.test;
 
-import arraylist.MyArrAyList;
+import collection.arraylist.MyArrAyList;
 
 /**
  * @Date: 2019/1/7 15:51

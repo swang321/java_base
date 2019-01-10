@@ -1,6 +1,6 @@
-package arraylist;
+package collection.arraylist;
 
-import myexception.MyException;
+import collection.myexception.MyException;
 
 import java.util.Arrays;
 

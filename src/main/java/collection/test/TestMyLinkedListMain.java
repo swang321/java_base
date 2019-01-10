@@ -1,6 +1,6 @@
-package test;
+package collection.test;
 
-import linkedlist.MyLinkedList;
+import collection.linkedlist.MyLinkedList;
 
 import java.util.LinkedList;
 

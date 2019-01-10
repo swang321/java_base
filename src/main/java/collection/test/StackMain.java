@@ -1,6 +1,6 @@
-package test;
+package collection.test;
 
-import stack.MyStack;
+import collection.stack.MyStack;
 
 import java.util.Stack;
 

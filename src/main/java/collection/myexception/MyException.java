@@ -1,4 +1,4 @@
-package myexception;
+package collection.myexception;
 
 /**
  * @Date: 2019/1/7 17:48

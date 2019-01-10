@@ -1,6 +1,6 @@
-package linkedlist;
+package collection.linkedlist;
 
-import myexception.MyException;
+import collection.myexception.MyException;
 
 /**
  * @Date: 2019/1/8 10:02

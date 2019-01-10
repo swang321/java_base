@@ -1,7 +1,7 @@
-package search;
+package collection.search;
 
 /**
- * 必须是线性结构  必须是有序的
+ * 二分 / 折半 查找  必须是线性结构  必须是有序的
  *
  * @author swang
  */
@@ -11,20 +11,14 @@ public class BinarySearch {
 
         int[] array = {5, 13, 19, 21, 37, 56, 64, 75, 80, 88, 92};
         int key = 92;
-        int index = binarySearch(array, key);
 
-        System.out.println(index);
-
-    }
-
-    private static int binarySearch(int[] array, int key) {
         int low = 0;
         int height = array.length - 1;
-        return binarySearch(array, key, low, height);
+        int index = binarySearch(array, key, low, height);
+        System.out.println(index);
     }
 
     private static int binarySearch(int[] array, int key, int low, int height) {
-
         if (low > height) {
             return -1;
         }
@@ -36,6 +30,6 @@ public class BinarySearch {
         } else {
             return binarySearch(array, key, low + 1, height);
         }
-
     }
+
 }

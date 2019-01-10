@@ -1,4 +1,4 @@
-package arraylist;
+package collection.arraylist;
 
 /**
  * @Date: 2019/1/2 11:49
