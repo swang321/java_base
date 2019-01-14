@@ -1,10 +1,10 @@
-package collection.search;
+package collection.sort;
 
 import java.util.Arrays;
 
 /**
  * @Date: 2019/1/10 17:40
- * @Description:
+ * @Description: 无重复数字时得    快速排序   快排
  * @Author admin
  */
 public class QuickSort {
@@ -25,14 +25,14 @@ public class QuickSort {
         int key = array[left];
         if (left < right) {
             while (left < right) {
-                while (left < right && array[right] > key) {
+                while (left < right && array[right] >= key) {
                     right--;
                 }
                 if (left < right) {
                     array[left] = array[right];
                     left++;
                 }
-                while (left < right && array[left] < key) {
+                while (left < right && array[left] <= key) {
                     left++;
                 }
                 if (left < right) {

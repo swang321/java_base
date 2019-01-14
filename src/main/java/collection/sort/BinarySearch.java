@@ -1,4 +1,4 @@
-package collection.search;
+package collection.sort;
 
 /**
  * 二分 / 折半 查找  必须是线性结构  必须是有序的
