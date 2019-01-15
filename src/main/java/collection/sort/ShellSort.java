@@ -4,19 +4,16 @@ import java.util.Arrays;
 
 /**
  * @Date: 2019/1/14 15:40
- * @Description:
+ * @Description: 希尔(shell)排序
  * @Author admin
  */
 public class ShellSort {
 
     public static void main(String[] args) {
-
-        int[] arr = {21, 25, 49, 24, 16, 8};
-        sort(arr,arr.length);
-        System.out.println(Arrays.toString(arr));
-
+        int[] arr = {21, 25, 49, 24, 16, 8, 29, 65, 35, 14, 26, 18, 27, 96, 35, 36, 37, 39, 33, 40, 16, 3, 7, 5, 10};
+        sort(arr, arr.length);
+//        System.out.println(Arrays.toString(arr));
     }
-
 
     private static void sort(int[] arr, int increment) {
         while (increment > 1) {
@@ -29,7 +26,7 @@ public class ShellSort {
                     arr[i] = front;
                 }
             }
-            System.out.println(increment);
+            System.out.println("increment: " + increment + "  " + Arrays.toString(arr));
             sort(arr, increment);
         }
     }
