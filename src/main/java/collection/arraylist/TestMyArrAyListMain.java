@@ -1,4 +1,4 @@
-package collection.test;
+package collection.arraylist;
 
 import collection.arraylist.MyArrAyList;
 

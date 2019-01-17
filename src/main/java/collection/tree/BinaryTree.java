@@ -1,5 +1,8 @@
 package collection.tree;
 
+/**
+ * @author admin
+ */
 public interface BinaryTree {
 
     /**
@@ -8,7 +11,12 @@ public interface BinaryTree {
     int size();
 
     /**
-     * 树的高度
+     * 返回树得高度
+     */
+    boolean isEmpty();
+
+    /**
+     * 树的高度  此节点得高度
      */
     int getHeight();
 
@@ -32,10 +40,8 @@ public interface BinaryTree {
      */
     void postOrderTraverse();
 
-    void postOrderTraverse(Node node);
-
     /**
-     * 前序遍历    (非递归栈来实现)
+     * 前序遍历    (非递归 栈来实现)
      */
     void inOrderByStack();
 
