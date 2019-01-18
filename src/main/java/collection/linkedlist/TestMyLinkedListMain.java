@@ -1,4 +1,4 @@
-package collection.test;
+package collection.linkedlist;
 
 import collection.linkedlist.MyLinkedList;
 

@@ -1,4 +1,4 @@
-package collection.test;
+package collection.stack;
 
 import collection.stack.MyStack;
 
