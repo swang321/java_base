@@ -30,7 +30,7 @@ public class SerializeDemo {
             People people = (People) input.readObject();
             input.close();
             fileInputStream.close();
-            System.out.println(people.getDdress());
+            System.out.println(people.getAdress());
             System.out.println(people.getName());
 
         } catch (IOException e) {
@@ -46,7 +46,7 @@ public class SerializeDemo {
     private static void serializePeople(String filePath) {
         People people = new People();
         people.setName("whh");
-        people.setDdress("深圳");
+        people.setAdress("深圳");
         try {
 
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
