@@ -4,8 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @Date: 2019/1/14 10:04
- * @Description:
  * @Author admin
  */
 public class QueueTest {

@@ -20,7 +20,7 @@ public class FutureCallableMain implements Callable {
         for (int i = 0; i < 10; i++) {
             System.out.println(Thread.currentThread().getName() + " 的循环变量i的值:  " + i);
             if (i == 5) {
-                new Thread(futureTask, "有返回值的线程").start();
+                new Thread(futureTask, Thread.currentThread().getName() + "--------------------有返回值的线程").start();
             }
         }
 
@@ -34,10 +34,13 @@ public class FutureCallableMain implements Callable {
 
     }
 
+    /**
+     * 线程方法
+     */
     @Override
     public Object call() throws Exception {
         int i = 0;
-        for (; i < 10; i++) {
+        for (; i < 5; i++) {
             System.out.println(Thread.currentThread().getName() + " : " + i);
         }
         return i;

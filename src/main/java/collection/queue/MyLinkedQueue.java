@@ -1,8 +1,6 @@
 package collection.queue;
 
 /**
- * @Date: 2019/1/9 14:28
- * @Description:
  * @Author admin
  */
 public class MyLinkedQueue implements IMyQueue {

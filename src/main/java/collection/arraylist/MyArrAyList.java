@@ -5,8 +5,6 @@ import collection.myexception.MyException;
 import java.util.Arrays;
 
 /**
- * @Date: 2019/1/2 11:48
- * @Description:
  * @Author admin
  */
 public class MyArrAyList implements IMyArrayList {

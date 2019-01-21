@@ -1,8 +1,6 @@
 package collection.arraylist;
 
 /**
- * @Date: 2019/1/2 11:49
- * @Description:
  * @Author admin
  */
 public interface IMyArrayList {

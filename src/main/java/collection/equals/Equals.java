@@ -1,8 +1,6 @@
 package collection.equals;
 
 /**
- * @Date: 2019/1/10 11:02
- * @Description:
  * @Author admin
  */
 public class Equals {

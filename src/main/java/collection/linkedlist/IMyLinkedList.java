@@ -1,8 +1,6 @@
 package collection.linkedlist;
 
 /**
- * @Date: 2019/1/8 10:01
- * @Description:
  * @Author admin
  */
 public interface IMyLinkedList {

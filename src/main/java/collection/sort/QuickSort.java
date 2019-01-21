@@ -3,7 +3,6 @@ package collection.sort;
 import java.util.Arrays;
 
 /**
- * @Date: 2019/1/10 17:40
  * @Description: 无重复数字时得    快速排序   快排
  * @Author admin
  */

@@ -1,10 +1,6 @@
 package collection.arraylist;
 
-import collection.arraylist.MyArrAyList;
-
 /**
- * @Date: 2019/1/7 15:51
- * @Description:
  * @Author admin
  */
 public class TestMyArrAyListMain {
@@ -25,7 +21,7 @@ public class TestMyArrAyListMain {
         System.out.println(myList);
         System.out.println(myList.size());
         System.out.println(myList.isEmpty());
-        myList.add(1,100);
+        myList.add(1, 100);
         System.out.println(myList);
         System.out.println(myList.size());
         System.out.println(myList.isEmpty());

@@ -1,12 +1,8 @@
 package collection.linkedlist;
 
-import collection.linkedlist.MyLinkedList;
-
 import java.util.LinkedList;
 
 /**
- * @Date: 2019/1/7 15:51
- * @Description:
  * @Author admin
  */
 public class TestMyLinkedListMain {

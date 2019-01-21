@@ -3,8 +3,6 @@ package collection.linkedlist;
 import collection.myexception.MyException;
 
 /**
- * @Date: 2019/1/8 10:02
- * @Description:
  * @Author admin
  */
 public class MyLinkedList implements IMyLinkedList {
