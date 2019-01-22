@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 /**
  * @Date: 2019/1/21 15:14
- * @Description: 示例
+ * @Description: 新建线程三种示例
  * @Author admin
  */
 public class ConcurrentMain02 {
