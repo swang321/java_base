@@ -1,5 +1,10 @@
 package string;
 
+import java.util.Collections;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @Date: 2019/1/22 10:37
  * @Description:
@@ -16,6 +21,15 @@ public class StringMain {
 
         char[] chars = str.toCharArray();
         System.out.println(chars.length);
+
+
+        SortedMap sortedMap = Collections.synchronizedSortedMap(new TreeMap());
+        sortedMap.put("a", "2");
+        sortedMap.put("c", "1");
+        sortedMap.put("b", "3");
+        System.out.println(sortedMap);
+
+        ReentrantLock reentrantLock = new ReentrantLock();
 
     }
 

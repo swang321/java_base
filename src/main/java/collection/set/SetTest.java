@@ -23,4 +23,11 @@ public class SetTest {
 
     }
 
+    static int getMax(int[] sz) {
+
+
+
+        return 0;
+    }
+
 }

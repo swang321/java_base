@@ -11,6 +11,7 @@ public class ConcurrentMain07 {
         for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(new SynThread());
             thread.start();
+
         }
         try {
             Thread.sleep(500);
