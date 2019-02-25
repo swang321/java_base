@@ -10,7 +10,7 @@ package thread.concurrent01;
  * 才会离开等待池，并且再次获得CPU时间片才会继续执行。
  * <p>
  * public static native void yield();
- * sleep()方法  y与  yield()方法类似
+ * sleep()方法  与  yield()方法类似
  * @Author admin
  */
 public class ConcurrentMain05 extends Thread {

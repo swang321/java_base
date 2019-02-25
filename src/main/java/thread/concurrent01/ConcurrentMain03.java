@@ -36,6 +36,7 @@ public class ConcurrentMain03 {
         thread.interrupt();
         busyThread.interrupt();
         while (thread.isInterrupted()) {
+            System.out.println("thread.isInterrupted()");
         }
         System.out.println("thread isInterrupted: " + thread.isInterrupted());
         System.out.println("busyThread isInterrupted: " + busyThread.isInterrupted());
