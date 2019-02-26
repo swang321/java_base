@@ -32,4 +32,7 @@
 synchronized 是一种悲观所策略              
 JMM happens-before规则     CAS(compare and swap) 乐观锁策略    
 
-     volatile                  
+     volatile   synchronized    
+     
+     synchronized: 具有原子性，有序性和可见性*        
+     volatile：具有有序性和可见性**      

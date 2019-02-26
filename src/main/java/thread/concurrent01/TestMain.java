@@ -1,5 +1,8 @@
 package thread.concurrent01;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @Author whh
  */
@@ -7,27 +10,32 @@ package thread.concurrent01;
 
 public class TestMain {
 
-    private static volatile boolean flag = false;
+    private static volatile int count = 0;
 
     public static void main(String[] args) {
 
-        Thread threads = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (!flag) {
-                    System.out.println("Asd");
+        for (int i = 0; i < 10; i++) {
+
+            Thread thread = new Thread(new Runnable() {
+                Lock lock = new ReentrantLock();
+
+                @Override
+                public void run() {
+                    for (int j = 0; j < 10000; j++) {
+                        count++;
+                    }
                 }
-            }
-        });
-        threads.start();
+            });
+            thread.start();
+        }
         try {
-            Thread.sleep(500);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        flag = true;
-    }
+        System.out.println(count);
 
+    }
 
 }
 
