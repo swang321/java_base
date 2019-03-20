@@ -1,5 +1,8 @@
 package collection.arraylist;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Author admin
  */
@@ -26,6 +29,10 @@ public class TestMyArrAyListMain {
         System.out.println(myList.size());
         System.out.println(myList.isEmpty());
         System.out.println(myList.get(12));
+
+
+        List list = new ArrayList();
+
 
     }
 }
