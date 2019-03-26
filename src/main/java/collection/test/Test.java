@@ -19,6 +19,10 @@ public class Test {
         List list = new ArrayList();
 
 
+        Vector vector = new Vector();
+
+        Stack stack = new Stack();
+
 
     }
 

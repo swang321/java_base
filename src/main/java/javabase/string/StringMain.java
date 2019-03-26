@@ -1,4 +1,4 @@
-package string;
+package javabase.string;
 
 import java.util.Collections;
 import java.util.SortedMap;

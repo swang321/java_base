@@ -1,4 +1,4 @@
-package serialize;
+package javabase.serialize;
 
 import java.io.*;
 
@@ -13,7 +13,7 @@ public class SerializeDemo {
 
         StringBuilder sb = new StringBuilder();
         sb.append(System.getProperty("user.dir"));
-        sb.append("\\serialize.ser");
+        sb.append("\\javabase.serialize.ser");
 
         serializePeople(String.valueOf(sb));
         reverseSerializePeople(String.valueOf(sb));

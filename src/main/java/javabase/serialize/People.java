@@ -1,4 +1,4 @@
-package serialize;
+package javabase.serialize;
 
 import java.io.Serializable;
 
