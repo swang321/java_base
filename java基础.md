@@ -1,10 +1,28 @@
 # java_basic 
 
 1   &和&&的区别
+  
+    Java中&&和&都是表示与的逻辑运算符，都表示逻辑运输符and，当两边的表达式都为true的时候，整个运算结果才为true，否则为false。
     
-    (a&b) (a&&b)  &和&&  只要有一边为false就为false 两个都是一样的  逻辑运算
-    (a & 1+2)    a  和 true or false  1+2都会计算
-    (a && 1+2)   a  为 true 时  才会计算 1+2  a 为false时  1+2 不会计算     
+    &&的短路功能，当第一个表达式的值为false的时候，则不再计算第二个表达式；&则两个表达式都执行。
+            int i = 0;
+            if (i == 3 && ++i > 0) {
+            }
+            System.out.println("i = " + i);        输出   0
+            
+    &可以用作位运算符，当&两边的表达式不是Boolean类型的时候，&表示按位操作。
+        int i = 0;
+        if (i == 3 & ++i > 0) {
+        }
+        System.out.println("i = " + i);        输出   1
+        
+        
+        
+    | 和 || 的区别
+    
+    if(表达式a  |   表达式b)     a 为 true  时  才会计算  b
+    if(表达式a  |   表达式b)     a 为 true  时  就直接返回了  不会计算    b
+    
     
 2   Java平台的理解？“Java是解释执行”，这句话正确吗？
 

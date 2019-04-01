@@ -20,31 +20,19 @@ public class ConcurrentMain02 {
             }
         };
         // 2.实现Runnable
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("实现Runnable");
-            }
-        });
+        Thread thread1 = new Thread(() -> System.out.println("实现Runnable"));
 
         // 3.实现callable接口
         ExecutorService service = Executors.newSingleThreadExecutor();
-        Future<String> future = service.submit(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                return "实现callable接口";
-            }
-        });
+        Future<String> future = service.submit(() -> "实现callable接口");
 
-        String result = null;
+        String result;
         try {
 
             result = future.get();
             System.out.println(result);
 
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
 

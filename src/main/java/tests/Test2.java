@@ -17,8 +17,6 @@ public class Test2 {
         Hello proxyHello = (Hello) Proxy.newProxyInstance(HelloImpl.class.getClassLoader(), HelloImpl.class.getInterfaces(), handler);
         proxyHello.sayHello();
     }
-
-
 }
 
 interface Hello {
@@ -45,6 +43,22 @@ class MyInvocationHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("Invoking say hello");
         return method.invoke(object, args);
+    }
+
+    private void test() {
+
+        boolean a = true;
+
+        char b = 123;
+
+        byte c = 11;
+        short d = 12;
+        int e = 5;
+        long f = 22;
+
+        float g = 6f;
+        double h = 12;
+
     }
 }
 
