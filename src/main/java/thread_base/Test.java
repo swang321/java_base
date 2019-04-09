@@ -1,40 +1,43 @@
 package thread_base;
 
+import javax.xml.transform.Result;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @Author whh
  */
 public class Test {
 
-    static Map<Integer, Integer> map = new HashMap<>(16);
-
     public static void main(String[] args) {
-        map.put(1, 1);
-        map.put(2, 2);
 
-        ReadMapThread rm = new ReadMapThread();
+        ReentrantLock reentrantLock = new ReentrantLock();
 
-        Thread t1 = new Thread(rm);
-        Thread t2 = new Thread(rm);
-        Thread t3 = new Thread(rm);
-        Thread t4 = new Thread(rm);
-        Thread t5 = new Thread(rm);
+        Map map = new HashMap(16);
 
-        t1.start();
-        t2.start();
-        t3.start();
-        t4.start();
-        t5.start();
+        
+
+
     }
 
-    static class ReadMapThread implements Runnable {
-        @Override
-        public void run() {
-            System.out.println(map.get(1));
+    void solve(Executor e, Collection<Callable<Result>> solvers) throws InterruptedException, ExecutionException {
+        CompletionService<Result> ecs = new ExecutorCompletionService<Result>(e);
+        for (Callable<Result> s : solvers) {
+            ecs.submit(s);
+        }
+        int n = solvers.size();
+        for (int i = 0; i < n; ++i) {
+            Result r = ecs.take().get();
+            if (r != null) {
+                System.out.println(r);
+            }
         }
     }
+
+
 }
 
 
