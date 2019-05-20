@@ -11,17 +11,10 @@ public class Test {
 
     public static void main(String[] args) {
 
-        User user = new User();
-        System.out.println(user.getAge());
-
-        Map map = new HashMap(16);
-
-        List list = new ArrayList();
-
-
-        Vector vector = new Vector();
-
-        Stack stack = new Stack();
+       Map map=new HashMap(16);
+        if (map!=null&&!map.isEmpty()) {
+            System.out.println(map.get("Asd"));
+        }
 
 
     }
