@@ -42,12 +42,9 @@ public class CollectionsMain {
         System.out.println(Collections.max(list));
         System.out.println(Collections.min(list));
 
-
         //  把集合所有得元素都换成 666
         Collections.fill(list,666);
         System.out.println(list);
-
-
 
         List list2 = Arrays.asList(6, 8, 3, 5, 4, 2, 9, 1, 7);
         Collections.replaceAll(list2,6,12);

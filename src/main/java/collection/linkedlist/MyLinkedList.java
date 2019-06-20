@@ -23,7 +23,7 @@ public class MyLinkedList implements IMyLinkedList {
     @Override
     public void add(Object obj) {
         Node<Object> lastNode = last;
-        Node<Object> newNode = new Node<Object>(lastNode, obj, null);
+        Node<Object> newNode = new Node<>(lastNode, obj, null);
         last = newNode;
         if (lastNode == null) {
             first = newNode;

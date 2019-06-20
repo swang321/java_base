@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
+import java.net.URLDecoder;
 import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.nio.charset.StandardCharsets;
@@ -17,6 +18,8 @@ import java.util.Iterator;
  * @Author whh
  */
 public class NioSocketServer {
+
+    //客户端  还是   BioSocketClient.java
 
     private static final Logger log = LoggerFactory.getLogger(NioSocketServer.class);
 
@@ -44,7 +47,7 @@ public class NioSocketServer {
                 // 返回键数，可能为零，  其就绪操作集已更新
                 if (selector.select(100) == 0) {
                     //   这里视业务情况
-                    System.out.println("100次还没有发现感兴趣的事");
+                    System.out.println("100秒还没有发现感兴趣的事");
                     continue;
                 }
                 //这里就是本次询问操作系统，所获取到的“所关心的事件”的事件类型（每一个通道都是独立的）
@@ -118,9 +121,23 @@ public class NioSocketServer {
         byte[] bytes = contextBytes.array();
         String message = new String(bytes, StandardCharsets.UTF_8);
 
+        //如果收到了“over”关键字，才会清空buffer，并回发数据；
         if (message.contains("over")) {
             // 清空已读读取的缓存
+            //清空已经读取的缓存，并从新切换为写状态(这里要注意clear()和capacity()两个方法的区别)
             contextBytes.clear();
+            NioSocketServer.log.info("端口:" + port + "客户端发来的信息======message : " + message);
+
+            // todo  处理业务
+
+            ByteBuffer sendBuffer = ByteBuffer.wrap(URLDecoder.decode("你好客户端,这是服务器的返回数据", "UTF-8").getBytes());
+            clientSocketChannel.write(sendBuffer);
+            clientSocketChannel.close();
+        }else {
+            NioSocketServer.log.info("端口:" + port + "客户端信息还未接受完，继续接受======message : " + message);
+            //这是，limit和capacity的值一致，position的位置是realLen的位置
+            contextBytes.position(realLen);
+            contextBytes.limit(contextBytes.capacity());
         }
 
 

@@ -16,9 +16,16 @@ public class BinarySearch {
         int height = array.length - 1;
         int index = binarySearch(array, key, low, height);
         System.out.println(index);
+
+        int index1 = binarySearch(array, key);
+        System.out.println(index1);
     }
 
+    /**
+     * 递归
+     */
     private static int binarySearch(int[] array, int key, int low, int height) {
+        System.out.println("-----------");
         if (low > height) {
             return -1;
         }
@@ -26,10 +33,33 @@ public class BinarySearch {
         if (key == array[mid]) {
             return mid;
         } else if (key < array[mid]) {
-            return binarySearch(array, key, low, height - 1);
+            return binarySearch(array, key, mid, height - 1);
         } else {
-            return binarySearch(array, key, low + 1, height);
+            return binarySearch(array, key, mid + 1, height);
         }
+    }
+
+
+
+    /**
+     * 循环
+     */
+    private static int binarySearch(int[] array, int key) {
+
+        int low = 0;
+        int height = array.length - 1;
+        while (low <= height) {
+            System.out.println("--------");
+            int mind = (low + height) / 2;
+            if (key == array[mind]) {
+                return mind;
+            } else if (key > array[mind]) {
+                low = mind + 1;
+            } else {
+                height = mind - 1;
+            }
+        }
+        return -1;
     }
 
 }

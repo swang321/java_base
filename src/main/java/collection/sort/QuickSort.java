@@ -20,7 +20,6 @@ public class QuickSort {
      * 从左向右找第一个大于x的数
      */
     private static int[] sort(int[] array, int left, int right) {
-
         int key = array[left];
         if (left < right) {
             while (left < right) {
@@ -40,7 +39,8 @@ public class QuickSort {
                 }
             }
             array[left] = key;
-
+            System.out.println(left);
+            System.out.println(right);
             sort(array, left, left - 1);
             sort(array, left + 1, right);
         }
