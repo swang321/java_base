@@ -45,9 +45,9 @@ public class NioSocketServer {
             // Java程序对多路复用 io 的支持又 阻塞 和非阻塞 模式
             while (true) {
                 // 返回键数，可能为零，  其就绪操作集已更新
-                if (selector.select(100) == 0) {
+                if (selector.select(1000) == 0) {
                     //   这里视业务情况
-                    System.out.println("100秒还没有发现感兴趣的事");
+                    System.out.println("1秒还没有发现感兴趣的事");
                     continue;
                 }
                 //这里就是本次询问操作系统，所获取到的“所关心的事件”的事件类型（每一个通道都是独立的）
