@@ -9,17 +9,17 @@ public class QuickSort1 {
 
     public static void main(String[] args) {
 
-        int[] arr = { 66, 13, 51, 76, 81, 26, 57, 69, 93};
-
+        int[] arr = {66, 13, 51, 76, 81, 26, 57, 69, 93};
         int[] sort = quickSort(arr, 0, arr.length - 1);
+        System.out.println(Arrays.toString(sort));
     }
 
-
     private static int[] quickSort(int[] arr, int left, int right) {
-
+        int i = left;
+        int j = right;
         int temp = arr[left];
         if (left < right) {
-            while (left <= right) {
+            while (left < right) {
                 while (left < right && arr[right] > temp) {
                     right--;
                 }
@@ -36,9 +36,9 @@ public class QuickSort1 {
                 }
             }
             arr[left] = temp;
-            System.out.println(Arrays.toString(arr));
+            quickSort(arr, i, left - 1);
+            quickSort(arr, left + 1, j);
         }
         return arr;
     }
-
 }
