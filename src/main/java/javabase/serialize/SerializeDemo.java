@@ -43,6 +43,7 @@ public class SerializeDemo {
     /**
      * 序列化 people
      */
+
     private static void serializePeople(String filePath) {
         People people = new People();
         people.setName("whh");

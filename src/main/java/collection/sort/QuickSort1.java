@@ -14,6 +14,9 @@ public class QuickSort1 {
         System.out.println(Arrays.toString(sort));
     }
 
+    /**
+     * 快排
+     */
     private static int[] quickSort(int[] arr, int left, int right) {
         int i = left;
         int j = right;

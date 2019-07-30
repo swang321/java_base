@@ -1,5 +1,8 @@
 package collection.map;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author whh
  */
@@ -10,6 +13,7 @@ public class Test {
     public static void main(String[] args) {
 
         test(4);
+        Map map = new HashMap();
 
     }
 

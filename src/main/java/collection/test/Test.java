@@ -1,6 +1,6 @@
 package collection.test;
 
-import java.util.*;
+import java.util.stream.IntStream;
 
 /**
  * @Date: 2019/1/10 11:47
@@ -11,11 +11,23 @@ public class Test {
 
     public static void main(String[] args) {
 
-       Map map=new HashMap(16);
-        if (map!=null&&!map.isEmpty()) {
-            System.out.println(map.get("Asd"));
-        }
+//      Boolean
 
+//        Socket socket = new Socket();
+//        InetAddress inetAddress = new InetAddress();
+//
+//        HostsFileNameService hostsFileNameService = new HashMapTest();
+
+        StringBuilder sb = new StringBuilder();
+//        sb.append("hello");
+//        IntStream chars = sb.chars();
+//        System.out.println(chars);
+        String aa = "hello-----------------------------";
+        StringBuilder append = sb.append(aa);
+        System.out.println(append);
+
+        long l = System.nanoTime();
+        System.out.println(l);
 
     }
 

@@ -1,5 +1,10 @@
 package collection.arraylist;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.TimeZone;
+
 /**
  * @Author whh
  */
@@ -7,11 +12,15 @@ public class Test {
 
     public static void main(String[] args) {
 
-        new  Thread(()-> System.out.println("线程111111111111111"),"111111111111").start();
+        String[] availableIDs = TimeZone.getAvailableIDs();
+        System.out.println(Arrays.toString(availableIDs));
 
-        new  Thread(()-> System.out.println("线程222222222222222"),"222222222222").start();
+        TimeZone timeZone = TimeZone.getTimeZone(String.valueOf(11));
+        System.out.println(timeZone);
 
-        System.out.println("000000000000000");
+        List l = new ArrayList();
+//        l.forEach();
+
 
     }
 }

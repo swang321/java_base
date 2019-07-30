@@ -1,5 +1,7 @@
 package collection.sort;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 
 /**
@@ -9,7 +11,7 @@ import java.util.Arrays;
  */
 public class ShellSort {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         int[] arr = {21, 25, 49, 24, 16, 8, 29, 65, 35, 14, 26, 18, 27, 96, 35, 36, 37, 39, 33, 40, 16, 3, 7, 5, 10};
         sort(arr, arr.length);
 //        System.out.println(Arrays.toString(arr));
