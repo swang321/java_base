@@ -1,3 +1,5 @@
+package jvm;
+
 /**
  * java 栈溢出
  * VM args: -verbose:gc -Xss128k -XX:+PrintGCDetails

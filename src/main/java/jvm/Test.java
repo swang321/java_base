@@ -1,4 +1,4 @@
-import com.sun.istack.internal.NotNull;
+package jvm;
 
 /**
  * @Author whh
@@ -51,6 +51,8 @@ public class Test {
         s2 = "ahh";
         // true
         System.out.println(s1 == s2);
+
+
     }
 }
 

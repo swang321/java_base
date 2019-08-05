@@ -1,3 +1,5 @@
+package jvm;
+
 /**
  * @Author whh
  * @Time 2019/7/23 9:42
@@ -8,7 +10,7 @@ public class ClassLoaderTest {
 
 
         System.out.println(Class.forName("java.lang.String").getClassLoader());
-        System.out.println(Class.forName("ClassLoaderTest").getClassLoader());
+        System.out.println(Class.forName("jvm.ClassLoaderTest").getClassLoader());
 
 //        reference
 
