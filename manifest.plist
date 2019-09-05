@@ -17,7 +17,7 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>/resignature.ipa</string>
+				<string>com.dajidalio.test2</string>
 				<key>bundle-version</key>
 				<string>1.0.0</string>
 				<key>kind</key>
