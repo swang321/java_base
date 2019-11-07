@@ -13,7 +13,11 @@ public class Test1 {
 
     public static void main(String[] args) {
 
+<<<<<<< HEAD
         int nums[] = {6, 7, 11, 2};
+=======
+        int nums [] = {6, 7, 11, 2};
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         int target = 9;
 
         System.out.println(Arrays.toString(twoSum(nums, target)));

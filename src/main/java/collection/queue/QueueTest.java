@@ -22,6 +22,10 @@ public class QueueTest {
         System.out.println(queue);
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         MyLinkedQueue myLinkedQueue = new MyLinkedQueue();
         myLinkedQueue.add(0);
         myLinkedQueue.add(1);

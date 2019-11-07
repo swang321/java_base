@@ -22,7 +22,11 @@ public class ShareDataTest {
                     }
                 }
             }
+<<<<<<< HEAD
         }, "线程AA").start();
+=======
+        },"线程AA").start();
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
 
         new Thread(new Runnable() {
@@ -36,7 +40,11 @@ public class ShareDataTest {
                     }
                 }
             }
+<<<<<<< HEAD
         }, "线程BB").start();
+=======
+        },"线程BB").start();
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
 
     }

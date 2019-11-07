@@ -10,7 +10,11 @@ import java.util.Iterator;
  */
 public class ConcurrentModificationExceptionTest1 {
 
+<<<<<<< HEAD
     static ArrayList<Integer> list = Lists.newArrayList(1, 2, 3, 4, 5);
+=======
+    static ArrayList<Integer> list = Lists.newArrayList(1,2,3,4,5);
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
     public static void main(String[] args) {
         new Thread(() -> {

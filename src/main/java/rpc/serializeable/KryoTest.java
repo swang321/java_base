@@ -17,7 +17,11 @@ public class KryoTest {
         Kryo kryo = new Kryo();
         Output output = new Output(new FileOutputStream("student.db"));
         Student kirito = new Student("kirito");
+<<<<<<< HEAD
         kryo.writeObject(output, kirito);
+=======
+        kryo.writeObject(output,kirito);
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         output.close();
 
     }

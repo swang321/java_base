@@ -23,18 +23,30 @@ public class ListIteratorTest {
             String next = (String) iterator.next();
             //int previousIndex = iterator.previousIndex();
             //  前一个元素的索引"+previousIndex*
+<<<<<<< HEAD
             System.out.println("当前元素：" + next + "，当前元素索引：" + nextIndex);
+=======
+            System.out.println("当前元素："+next+"，当前元素索引："+nextIndex);
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         }
         System.out.println("--------------------向上遍历--------------------");
         while (iterator.hasPrevious()) {
             int previousIndex = iterator.previousIndex();
             String previous = (String) iterator.previous();
+<<<<<<< HEAD
             System.out.println("当前元素：" + previous + "，当前元素索引：" + previousIndex);
+=======
+            System.out.println("当前元素："+previous+"，当前元素索引："+previousIndex);
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         }
         System.out.println("-----------测试set()和listIterator(n)----------");
         System.out.println(list);
         iterator = list.listIterator(3);
+<<<<<<< HEAD
         while (iterator.hasNext()) {
+=======
+        while(iterator.hasNext()){
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
             iterator.next();
             iterator.set("5");
         }

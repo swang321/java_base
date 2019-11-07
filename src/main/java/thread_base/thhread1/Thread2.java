@@ -7,8 +7,13 @@ public class Thread2 {
 
     public static void main(String[] args) {
 
+<<<<<<< HEAD
         MyThread2 t1 = new MyThread2();
         MyThread2 t2 = new MyThread2();
+=======
+        MyThread2 t1=new MyThread2();
+        MyThread2 t2=new MyThread2();
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
         t1.start();
         t2.start();

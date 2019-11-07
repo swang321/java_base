@@ -36,6 +36,10 @@ public class TestMain {
         System.out.println("5&3=" + (5 & 3));
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         HashMap<Integer, Integer> mapLevelThird = new HashMap<>(16);
 
     }

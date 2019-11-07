@@ -13,7 +13,10 @@ public class ThreadMain extends Thread {
         RunnableThread runnableThread2 = new RunnableThread("-------------------------");
         runnableThread2.start();
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
     static class RunnableThread implements Runnable {
         private Thread thread;
         private String threadName;

@@ -35,7 +35,11 @@ public class CollectionsMain {
         System.out.println(list);
 
         // 把list  集合 整体向右移动两位
+<<<<<<< HEAD
         Collections.rotate(list, 2);
+=======
+        Collections.rotate(list,2);
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         System.out.println(list);
 
         // 最大值  最小值
@@ -43,11 +47,19 @@ public class CollectionsMain {
         System.out.println(Collections.min(list));
 
         //  把集合所有得元素都换成 666
+<<<<<<< HEAD
         Collections.fill(list, 666);
         System.out.println(list);
 
         List list2 = Arrays.asList(6, 8, 3, 5, 4, 2, 9, 1, 7);
         Collections.replaceAll(list2, 6, 12);
+=======
+        Collections.fill(list,666);
+        System.out.println(list);
+
+        List list2 = Arrays.asList(6, 8, 3, 5, 4, 2, 9, 1, 7);
+        Collections.replaceAll(list2,6,12);
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         System.out.println(list2);
 
 

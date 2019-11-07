@@ -40,6 +40,10 @@ public class BinarySearch {
     }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
     /**
      * 循环
      */

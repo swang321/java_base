@@ -51,7 +51,11 @@ class StackParent {
             throw new IllegalArgumentException("Illegal Capacity: " +
                     index);
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         for (int i = index; i >= 0; i--) {
             if (elementData[i] == obj) {
                 return i;

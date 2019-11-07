@@ -16,11 +16,19 @@ public class PeopleTest {
 
         List<Map<String, String>> mapList = new ArrayList<>();
 
+<<<<<<< HEAD
         Map<String, String> map = new HashMap<>(16);
         map.put("1", "1");
 
         Map<String, String> map1 = new HashMap<>(16);
         map1.put("2", "2");
+=======
+        Map<String,String> map=new HashMap<>(16);
+        map.put("1","1");
+
+        Map<String,String> map1=new HashMap<>(16);
+        map1.put("2","2");
+>>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
         mapList.add(map);
         mapList.add(map1);
