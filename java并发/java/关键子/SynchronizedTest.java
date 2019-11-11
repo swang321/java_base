@@ -5,8 +5,15 @@ package 关键子;
  */
 public class SynchronizedTest {
 
+    private static final Object object = new Object();
+
 
     public static void main(String[] args) {
+
+        synchronized (object) {
+
+        }
+
     }
 
 }
