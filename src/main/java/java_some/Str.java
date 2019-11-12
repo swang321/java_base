@@ -1,10 +1,7 @@
 package java_some;
 
-<<<<<<< HEAD
 import java.util.HashMap;
 
-=======
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 /**
  * @Author whh  2019/8/5 11:25
  */
@@ -15,12 +12,9 @@ public class Str {
         String a = "hello";
         a = a + "2";
 
-<<<<<<< HEAD
         HashMap map = new HashMap();
 
 
-=======
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
     }
 
 }

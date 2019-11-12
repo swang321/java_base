@@ -21,10 +21,9 @@ public class Test1 {
             e.printStackTrace();
         }
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
+
+
     // 测试迭代器的remove方法修改集合结构会不会触发checkForComodification异常
     private void ItrRemoveTest() {
         Vector list = new Vector<>();

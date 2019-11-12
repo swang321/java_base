@@ -21,19 +21,12 @@ public class ThreadLocalTest {
 
     public static void main(String[] args) {
 
-<<<<<<< HEAD
         ThreadLocal local = new ThreadLocal();
 
-        ThreadLocalTest test = new ThreadLocalTest();
-        TestClient t1 = new TestClient(test);
-        TestClient t2 = new TestClient(test);
-        TestClient t3 = new TestClient(test);
-=======
         ThreadLocalTest test = new ThreadLocalTest();
         TestClient t1=new TestClient(test);
         TestClient t2=new TestClient(test);
         TestClient t3=new TestClient(test);
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
         t1.start();
         t2.start();

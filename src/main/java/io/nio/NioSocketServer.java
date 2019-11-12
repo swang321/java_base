@@ -133,11 +133,7 @@ public class NioSocketServer {
             ByteBuffer sendBuffer = ByteBuffer.wrap(URLDecoder.decode("你好客户端,这是服务器的返回数据", "UTF-8").getBytes());
             clientSocketChannel.write(sendBuffer);
             clientSocketChannel.close();
-<<<<<<< HEAD
-        } else {
-=======
         }else {
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
             NioSocketServer.log.info("端口:" + port + "客户端信息还未接受完，继续接受======message : " + message);
             //这是，limit和capacity的值一致，position的位置是realLen的位置
             contextBytes.position(realLen);

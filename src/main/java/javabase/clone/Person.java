@@ -43,11 +43,7 @@ public class Person implements Cloneable, Serializable {
         this.email = email;
     }
 
-<<<<<<< HEAD
     static class Email implements Serializable {
-=======
-    static class Email implements Serializable{
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         private static final long serialVersionUID = -2775038899533500153L;
         String text;
 

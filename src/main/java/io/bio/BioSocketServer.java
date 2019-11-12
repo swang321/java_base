@@ -18,11 +18,8 @@ public class BioSocketServer {
     public static void main(String[] args) throws InterruptedException {
         ServerSocket serverSocket = null;
         try {
-<<<<<<< HEAD
-            System.out.println("监听来自于" + DEFAULT_PORT + "的端口信息");
-=======
+
             System.out.println("监听来自于"+DEFAULT_PORT+"的端口信息");
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
             serverSocket = new ServerSocket(DEFAULT_PORT);
             while (true) {
                 Socket socket = serverSocket.accept();

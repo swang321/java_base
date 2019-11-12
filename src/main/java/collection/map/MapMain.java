@@ -20,17 +20,12 @@ public class MapMain {
 
         Map map = new HashMap(16);
 
-<<<<<<< HEAD
         TreeMap treeMap = new TreeMap();
 
 
         String ss = "132";
-=======
-        TreeMap treeMap=new TreeMap();
 
 
-        String ss ="132";
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         System.out.println(ss.hashCode());
 
         ExecutorService service = Executors.newSingleThreadExecutor();
@@ -84,11 +79,6 @@ public class MapMain {
 //        如果没有找到key映射的节点（2、3步中讲了，这种情况会插入到hashMap中），插入节点后size会加1，这时要检查size是否大于临界值threshold，如果大于会使用resize方法进行扩容。
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 //可以将resize的步骤总结为
 //
 //        计算扩容后的容量，临界值。
@@ -97,10 +87,7 @@ public class MapMain {
 //        将旧数组的元素复制到table中。
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 //  新建数组保存旧数组的
 //  保存当前阈值
 //  判断扩容需要的容量是否 合法

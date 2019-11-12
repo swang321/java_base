@@ -21,10 +21,6 @@ public class Clerk {
     public void setProduct(int product) {
         this.product = product;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
     // 生产商送货的方法
     public synchronized void getProducts() {
         if (product >= 20) {

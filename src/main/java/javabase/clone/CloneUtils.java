@@ -19,15 +19,10 @@ public class CloneUtils {
             obs.close();
 
             //分配内存 写入原始对象 生成心对象
-<<<<<<< HEAD
-            ByteArrayInputStream ios = new ByteArrayInputStream(out.toByteArray());
-            ObjectInputStream ois = new ObjectInputStream(ios);
-            cloneObj = (T) ois.readObject();
-=======
+
             ByteArrayInputStream ios=new ByteArrayInputStream(out.toByteArray());
             ObjectInputStream ois=new ObjectInputStream(ios);
             cloneObj =(T) ois.readObject();
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

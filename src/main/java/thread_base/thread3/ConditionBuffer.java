@@ -35,11 +35,7 @@ class ConditionBuffer {
             notEmpty.signal();
 
             // 打印写入的数据
-<<<<<<< HEAD
             System.out.println(Thread.currentThread().getName() + " put  " + (Integer) obj);
-=======
-            System.out.println(Thread.currentThread().getName() + " put  "+ (Integer)obj);
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
         } finally {
             lock.unlock();    // 释放锁
         }
@@ -64,11 +60,8 @@ class ConditionBuffer {
             notFull.signal();
 
             // 打印取出的数据
-<<<<<<< HEAD
+
             System.out.println(Thread.currentThread().getName() + " take " + obj);
-=======
-            System.out.println(Thread.currentThread().getName() + " take "+ obj);
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
             return obj;
         } finally {
             lock.unlock();    // 释放锁

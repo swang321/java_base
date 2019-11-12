@@ -16,11 +16,7 @@ public class Customer implements Runnable {
 
     @Override
     public void run() {
-<<<<<<< HEAD
         while (true) {
-=======
-        while (true){
->>>>>>> 61b50b7609c7b8eb97f29dbc145658e6bc2cb979
             clerk.takeOffproduct();
         }
     }
