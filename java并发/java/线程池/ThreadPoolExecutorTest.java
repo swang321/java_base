@@ -28,6 +28,9 @@ public class ThreadPoolExecutorTest {
                     return thread;
                 });
 
+        Thread.interrupted();
+
+
 
         Executors.newFixedThreadPool(2);
         //  new ThreadPoolExecutor(nThreads, nThreads,0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>())
@@ -51,3 +54,4 @@ public class ThreadPoolExecutorTest {
     }
 
 }
+

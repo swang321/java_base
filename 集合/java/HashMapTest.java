@@ -1,3 +1,5 @@
+import com.google.common.base.Objects;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,13 +12,14 @@ public class HashMapTest {
 
     public static void main(String[] args) {
 
-        Map map = new HashMap(16);
-
-        int i = tableSizeFor(16);
-        System.out.println(i);
-
+        Map<StuMap, Integer> map = new HashMap<>(16);
+        StuMap stuMap ;
+        for (int i = 0; i < 30; i++) {
+            stuMap = new StuMap();
+            stuMap.setAge(i);
+            map.put(stuMap, i);
+        }
     }
-
 
     static final int tableSizeFor(int cap) {
         // 扩容门槛为传入的初始容量往上取最近的2的n次方
@@ -28,5 +31,25 @@ public class HashMapTest {
         n |= n >>> 16;
         return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
     }
+}
 
+class StuMap {
+
+    private Integer age;
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
+    public int hashCode() {
+        if (age >= 12) {
+            return 1;
+        }
+        return Objects.hashCode(age);
+    }
 }
