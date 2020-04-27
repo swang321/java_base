@@ -38,4 +38,9 @@ public class ConcreteIterator implements Iterator {
     public Object currentItem() {
         return null;
     }
+
+
+
+
+
 }

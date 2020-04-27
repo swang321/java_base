@@ -22,7 +22,7 @@ cpu飙高
 
 3   printf "%x" tid     把 tid 转换成 十六进制  (6d5e)
 
-4   jstack pid | grep tid十六进制 -A 30    jstack 27984 | grep 6d5e -A 30
+4   jstack pid | grep tid十六进制 -A 30  eg:  jstack 27984 | grep 6d5e -A 30
 
 生成 thread dump 文件
 eg: 线程 id  2576
@@ -33,6 +33,7 @@ jmap -heap 28228 > ./dump.txt  打印 堆栈空间状态
 
 
 jps     jvm 显示所有虚拟机进程
+
 
 jstat       收集jvm虚拟机运行数据   
 

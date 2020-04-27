@@ -2,7 +2,7 @@
 
 # 修改 server.xml  
     
- 1 8080改成对应的 域名
+ 1 8080改成对应的 端口
    
     <Connector port="8080" protocol="HTTP/1.1"
                    connectionTimeout="20000"
