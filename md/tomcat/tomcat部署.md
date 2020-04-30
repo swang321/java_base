@@ -29,8 +29,8 @@
 
     修改 tomcat目录bin目录下的 catalina.sh
 
-     CATALINA_OPTS="-Xms1024M
-                    -Xmx1024M
+     CATALINA_OPTS="-Xms256M
+                    -Xmx256M
                     -XX:NewSize=500m 
                     -XX:MaxNewSize=500m
                     -XX:+PrintCommandLineFlags 
@@ -51,3 +51,12 @@
      -Xmn    Java Heap Young区大小，不熟悉最好保留默认值；
      
      -Xss   每个线程的Stack大小，不熟悉最好保留默认值；
+
+
+nohup java -jar -Xms256M -Xmx256M -XX:PermSize=256M -XX:MaxPermSize=512M  project.jar
+
+Xms:堆内存初始大小
+Xmx:堆内存最大值
+PermSize:永久内存初始大小
+MaxPermSize：永久内存最大值
+堆内存和永久内存区别以及其他参数设置，参考jvm运行机制
