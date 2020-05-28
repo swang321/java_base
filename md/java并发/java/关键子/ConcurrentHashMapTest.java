@@ -10,7 +10,7 @@ public class ConcurrentHashMapTest {
     public static void main(String[] args) {
 
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap(16);
-
+        concurrentHashMap.put("q", "q");
 
 
     }

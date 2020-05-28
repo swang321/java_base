@@ -53,7 +53,7 @@
      -Xss   每个线程的Stack大小，不熟悉最好保留默认值；
 
 
-nohup java -jar -Xms256M -Xmx256M -XX:PermSize=256M -XX:MaxPermSize=512M  project.jar
+nohup java -jar -Xms256M -Xmx256M -XX:PermSize=256M -XX:MaxPermSize=512M  back-0.0.1-SNAPSHOT.jar &
 
 Xms:堆内存初始大小
 Xmx:堆内存最大值

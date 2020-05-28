@@ -1,7 +1,9 @@
 import com.google.common.base.Objects;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @Author whh  2019/11/12 15:33
@@ -12,8 +14,10 @@ public class HashMapTest {
 
     public static void main(String[] args) {
 
+        Set<Object> objects = new HashSet<>();
+
         Map<StuMap, Integer> map = new HashMap<>(16);
-        StuMap stuMap ;
+        StuMap stuMap;
         for (int i = 0; i < 30; i++) {
             stuMap = new StuMap();
             stuMap.setAge(i);

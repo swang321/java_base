@@ -2,13 +2,19 @@ package 线程池;
 
 
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @Author whh  2019/11/11 15:49
  */
 public class ThreadPoolExecutorTest {
 
+    private static volatile AtomicInteger atomicInteger = new AtomicInteger();
+
     public static void main(String[] args) {
+
+        ThreadLocal aa = new ThreadLocal();
+
 
         ExecutorService threadPoolExecutor = new ThreadPoolExecutor(1, 1, 1, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<>());
@@ -24,12 +30,11 @@ public class ThreadPoolExecutorTest {
         ThreadPoolExecutor executor = new ThreadPoolExecutor
                 (1, 1, 1, TimeUnit.SECONDS, new LinkedBlockingQueue<>(), r -> {
                     Thread thread = new Thread(r);
-                    thread.setName("thread_task_name");
+                    thread.setName("" + atomicInteger.getAndIncrement() + "thread_task_name");
                     return thread;
                 });
 
         Thread.interrupted();
-
 
 
         Executors.newFixedThreadPool(2);

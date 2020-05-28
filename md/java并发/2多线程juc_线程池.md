@@ -33,7 +33,7 @@
         this.handler = handler;
     }
 
-#####   handler是线程池拒绝策略
+#####   handler 是线程池拒绝策略
     1   ThreadPoolExecutor.AbortPolicy ，默认策略，处理程序遭到拒绝将抛出运行时 RejectedExecutionException。
     2   ThreadPoolExecutor.CallerRunsPolicy，线程调用运行该任务的 execute 本身。此策略提供简单的反馈控制机制，能够减缓新任务的提交速度。
     3   ThreadPoolExecutor.DiscardPolicy，不能执行的任务将被删除。
@@ -41,7 +41,7 @@
 
 #####   排队策略
     1   SynchronousQueue    它将任务直接传输给工作队列workers，而不保持任务。如果不存在空闲线程，则会新建一个线程来执行任
-    2   LinkedBlockingQueue 有界队列，使用此队列会导致在所有corePoolSize线程都忙时新任务在队列中等待。这样，创建的线程就不会超过corePoolSize 
+    2   LinkedBlockingQueue 无界队列，使用此队列会导致在所有corePoolSize线程都忙时新任务在队列中等待。这样，创建的线程就不会超过corePoolSize 
     3   ArrayBlockingQueue 有界队列
 
 #####   线程池状态

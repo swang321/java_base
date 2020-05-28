@@ -7,7 +7,7 @@
     1 事务
     2 开启 confirm 模式
 
-2）rabbitmq弄丢了数据
+2）rabbitmq 弄丢了数据
 
     第一个是创建queue的时候将其设置为持久化的，这样就可以保证rabbitmq持久化queue的元数据
     第二个是发送消息的时候将消息的deliveryMode设置为2，就是将消息设置为持久化的，此时rabbitmq就会将消息持久化到磁盘上去
@@ -27,7 +27,26 @@
     拆分多个queue 一个queue对应一个consumer
     
     
+####  rabbitmq 的交换机类型
+
+    Direct   处理路由键 要求该消息与一个特定的路由键完全匹配。这是一个完整的匹配
     
+    Fanout   不处理路由键。 你只需要简单的将队列绑定到交换机上
     
+    Topic    路由键和某模式进行匹配 此时队列需要绑定要一个模式上。符号“#”匹配一个或多个词，符号“”匹配不多不少一个词
+        
+    Headers   不处理路由键。而是根据发送的消息内容中的headers属性进行匹配  
+    
+#### 延时队列
+
+    publisher ---> queue   --->   ttl  -->  dead.queue  --->  subscriber
+    
+
+算法 nio  
+
+
+    
+        
+        
     
     

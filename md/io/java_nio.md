@@ -27,7 +27,18 @@ selectors 监听四种类型事件
     SelectionKey.OP_ACCEPT
     SelectionKey.OP_READ
     SelectionKey.OP_WRITE
-        
 
-  
+
+NIO 核心部分
+
+    Channels
+    Buffers
+    Selectors
+
+使用Buffer读写数据一般遵循以下四个步骤：
+
+    写入数据到Buffer
+    调用flip()方法          需要通过flip()方法将Buffer从写模式切换到读模式。在读模式下，可以读取之前写入到buffer的所有数据。
+    从Buffer中读取数据
+    调用clear()方法或者compact()方法            有两种方式能清空缓冲区：调用clear()或compact()方法
      
