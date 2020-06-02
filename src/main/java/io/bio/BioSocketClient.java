@@ -34,6 +34,8 @@ public class BioSocketClient {
 
 class ClientRequestThread implements Runnable {
 
+
+
     /**
      * countDownLatch是java提供的同步计数器。
      * 当计数器数值减为0时，所有受其影响而等待的线程将会被激活。这样保证模拟并发请求的真实性

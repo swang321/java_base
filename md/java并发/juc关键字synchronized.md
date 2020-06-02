@@ -82,5 +82,5 @@ synchronized 通过 monitor 和 monitorexit 对象 （指令）来控制访问�
 ## ThreadLocal 
 
     1   ThreadLocal的内部类ThreadLocalMap（weakreference 虚引用） 维护线程中的变量
-    2   ThreadLocal会为每一个线程提供一个独立的变量副本，从而隔离了多个线程对数据的访问冲突
+    2   ThreadLocal 会为每一个线程提供一个独立的变量副本，从而隔离了多个线程对数据的访问冲突
     

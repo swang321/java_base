@@ -1,0 +1,13 @@
+
+
+1   讲hashmap put过程
+2   hashcode  equals
+3   io随便聊一下
+4   jvm 内存模型
+5   gc 和 gc的几个算法
+6   类加载过程，双亲委派
+7   多线程  ，锁 ReentrantLock CAS
+8   volatile， synchronized，interrupt interrupted isInterrupted  ThreadLocal
+9   双重检查锁
+10  mysql 索引  幻读  脏读 事务 隔离级别
+11  设计模式
