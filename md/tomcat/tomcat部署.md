@@ -60,3 +60,8 @@ Xmx:堆内存最大值
 PermSize:永久内存初始大小
 MaxPermSize：永久内存最大值
 堆内存和永久内存区别以及其他参数设置，参考jvm运行机制
+
+
+java -jar -Xms512M -Xmx512M -XX:NewSize=128M -XX:MaxNewSize=128M 
+-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/admin/customer/heap_dump.hprof 
+-XX:+PrintGCDetails back-0.0.1-SNAPSHOT.jar &
