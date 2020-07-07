@@ -26,8 +26,8 @@
      启动  进入bin目录下面    filebeat.exe -e -c filebeat.yml
     
 
-
-
 1  启动 es
 2  启动  logstash
 3  启动  kibana
+
+    filebeat  --->   logstash   -->  es  索引
