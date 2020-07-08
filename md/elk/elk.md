@@ -27,7 +27,7 @@
     
 
 1  启动 es
-2  启动  logstash
-3  启动  kibana
+2  启动  logstash             logstash -f ..\config\logstash.conf
+3  启动  kibana               kibana.bat
 
     filebeat  --->   logstash   -->  es  索引
