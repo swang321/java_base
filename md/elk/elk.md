@@ -31,3 +31,8 @@
 3  启动  kibana               kibana.bat
 
     filebeat  --->   logstash   -->  es  索引
+    
+   
+   es    9200
+  elasticsearch-head-master    9100
+  kibana 5601
