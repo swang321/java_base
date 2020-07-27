@@ -55,6 +55,8 @@
 
 nohup java -jar -Xms256M -Xmx256M -XX:PermSize=256M -XX:MaxPermSize=512M  back-0.0.1-SNAPSHOT.jar &
 
+nohup java -jar -Xms256M -Xmx256M  back-0.0.1-SNAPSHOT.jar >/mnt/logs/test.log &
+
 Xms:堆内存初始大小
 Xmx:堆内存最大值
 PermSize:永久内存初始大小
