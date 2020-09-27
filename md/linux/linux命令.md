@@ -11,7 +11,7 @@
 
 firewall-cmd --zone=public --list-ports
 
-firewall-cmd --zone=public --add-port=9100/tcp --permanent
+firewall-cmd --zone=public --add-port=50090/tcp --permanent
 
 firewall-cmd --reload
 
