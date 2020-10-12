@@ -13,7 +13,7 @@
     <configuration>
             <property>
                     <name>fs.defaultFS</name>
-                    <value>locaohost:9000</value>
+                    <value>master:9000</value>
             </property>
             <property>
                     <name>hadoop.tmp.dir</name>
@@ -53,7 +53,7 @@
     
             <property>
                     <name>dfs.secondary.http.address</name>
-                    <value>hadoop2:50090</value>
+                    <value>master:50090</value>
                     <description>secondarynamenode 运行节点的信息，和 namenode 不同节点</description>
             </property>
     </configuration>
@@ -87,7 +87,7 @@
         
                 <property>
                         <name>yarn.resourcemanager.hostname</name>
-                        <value>hadoop2</value>
+                        <value>master</value>
                 </property>
         
                 <property>

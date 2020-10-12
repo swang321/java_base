@@ -17,6 +17,7 @@
     执行ifconfig ：
  
  #### 修改yum
+ .
  
     cd /etc/yum.repos.d/
     

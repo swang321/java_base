@@ -8,7 +8,7 @@
 3、管理者　　工作者
 
 4、leader　　follower
-
+   
 Hadoop集群中各个角色的名称：
 
     服务	主节点	从节点
@@ -34,3 +34,7 @@ jps 查看 hadoop是否启动
 启动YARN 只能在主节点中进行启动
 
     start-yarn.sh
+    
+namenode ip 50070
+
+yarn ip 8088
