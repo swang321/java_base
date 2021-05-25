@@ -22,14 +22,21 @@ cpu飙高
 
 3   printf "%x" tid     把 tid 转换成 十六进制  (6d5e)
 
-4   jstack pid | grep tid十六进制 -A 30  eg:  jstack 27984 | grep 6d5e -A 30
+4   jstack pid | grep tid十六进制 -A 30  eg:  jstack 1 | grep 1 -A 30
+
+
+//        docker exec -it mine_pool /bin/bash    进入 容器
+
+//        docker-compose up -d --build    构建
+
+
 
 生成 thread dump 文件
 eg: 线程 id  2576
 
-jstack 2576 > ./thread.txt   打印线程状态
+jstack 1 > /opt/thread/thread.txt   打印线程状态
 
-jmap -heap 28228 > ./dump.txt  打印 堆栈空间状态
+jmap -heap 1 > /opt/thread/dump.txt  打印 堆栈空间状态
 
 
 jps     jvm 显示所有虚拟机进程
