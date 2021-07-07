@@ -59,3 +59,10 @@ jstat -gc 31405 250 20
 eg:     参数   每隔250毫秒查询一次 31405 线程id 得垃圾收集情况 收集 20 次
 
 jinfo 31405  eg:  jvm虚拟机参数
+
+
+
+curl -O https://arthas.aliyun.com/arthas-boot.jar
+
+
+java -jar arthas-boot.jar

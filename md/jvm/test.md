@@ -9,7 +9,7 @@ top
 top -Hp 15979      各个线程的资源使用率
 
 810137
-printf "%x\n" 15983     
+printf "%x\n" 553085     
 printf "%x\n" 15984     
 printf "%x\n" 15984     
 printf "%x\n" 15981     
@@ -35,7 +35,7 @@ nohup java -jar -XX:+PrintHeapAtGC -Xloggc:/data/mine-pool/gc.log -XX:+HeapDumpO
 nohup java -jar -XX:+PrintHeapAtGC -Xloggc:/data/mine-pool/gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/mine-pool  -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PreserveFramePointer -Xmx4g -Xms4g -Xmn1g -XX:MaxPermSize=128M  demo-0.0.1-SNAPSHOT.jar &
 
 14:51:55
-jmap -dump:live,format=b,file=/data/mine-pool/1442.hprof 1666
+jmap -dump:live,format=b,file=/opt/thread/0948.hprof 1
 
 "-XX:+PrintHeapAtGC","-Xloggc:/data/mine-pool/gc.log", "-XX:+HeapDumpOnOutOfMemoryError", "-XX:HeapDumpPath=/data/mine-pool", "-XX:+PrintGCDetails", "-XX:+PrintGCDateStamps"
 
@@ -51,3 +51,11 @@ Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00007fc1adf
 # An error report file with more information is saved as:
 # /data/mine-pool/hs_err_pid614268.log
 
+
+
+top -Hp 553058
+553085
+printf "%x\n" 553085            8707d
+jstack 553058|grep -A 20 8707d
+
+jstat -gc 553058 5000
