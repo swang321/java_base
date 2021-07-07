@@ -25,6 +25,7 @@ printf "%x\n" 15981
 31   1f  
 30   1e 
 
+test
 
 nohup java -jar -Xmx5g -Xms5g -Xmn1g -XX:MaxPermSize=256M -XX:SurvivorRatio=8 -XX:MetaspaceSize=1g -XX:CMSInitiatingOccupancyFraction=75 mine-pool.jar &
 
