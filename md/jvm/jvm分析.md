@@ -66,3 +66,16 @@ curl -O https://arthas.aliyun.com/arthas-boot.jar
 
 
 java -jar arthas-boot.jar
+
+
+
+
+jmap -dump:live,format=b,file=heap.bin <pid>
+
+live表示只dump活跃对象，format=b表示二进制格式，file表示保存文件的路径，pid表示进程号。
+
+
+
+jstack pid > /opt/thread/thread.txt   打印线程状态
+
+jmap -heap pid > /opt/thread/dump.txt  打印 堆栈空间状态
